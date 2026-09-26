@@ -69,3 +69,5 @@ Catalog and server content currently use mock data separated from rendering logi
 ## Deployment
 
 `npm run build` produces a static site in `dist/`. It can be deployed to any static host with SPA fallback configured to serve `index.html`. Store deployment credentials in the platform's encrypted secret manager, not this repository.
+
+GitHub Actions runs linting and a production build for every pull request and push to `main`. Deployment is intentionally not enabled until a hosting platform and its private credentials are selected.
