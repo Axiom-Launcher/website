@@ -16,13 +16,12 @@ const infoLinks = [
   ["Privacy Policy", "Your data and controls", "privacy-policy"],
   ["Documentation", "Guides and references", "documentation"],
   ["Community Guidelines", "Community standards", "community-guidelines"],
-  ["About", "About Axiom", "about"],
-  ["Promo Program", "Promote Axiom and earn rewards", "programs"],
   ["Partner Program", "Programs for creators and servers", "programs"],
   ["Terms of Service", "Platform terms", "terms"],
   ["Support", "Get help", "support"],
   ["Social Media", "Find Axiom online", "social-media"],
   ["Status", "Service health", "status"],
+  ["Promo Program", "Promote Axiom and earn rewards", "programs"],
   ["Learning Program", "Learn Minecraft, modding, and development", "programs"],
 ];
 function Dropdown({ label, items, go, wide = false }) {
