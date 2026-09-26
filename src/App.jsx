@@ -11,28 +11,19 @@ const exploreLinks = [
   ["Shaders", "Transform the light", "shaders", "spark"],
   ["Data Packs", "Expand your worlds", "datapacks", "globe"],
 ];
-const programLinks = [
-  ["Social Media Program", "Community reach"],
-  ["Creator Partner Program", "Creator support"],
-  ["Server Partner Program", "Server growth"],
-  ["Referral Program", "Share Axiom"],
-  ["Creator Revenue Pool", "Creator rewards"],
-  ["Player-Hour Rewards", "Engagement rewards"],
-  ["Mod Creator Program", "Publishing tools"],
-  ["Community Contributor Program", "Community impact"],
-  ["Beta Testing Program", "Early feedback"],
-  ["Developer Program", "Build integrations"],
-];
 const infoLinks = [
   ["Legal", "Policies and notices", "legal"],
-  ["Terms of Service", "Platform terms", "terms"],
   ["Privacy Policy", "Your data and controls", "privacy-policy"],
-  ["Support", "Get help", "support"],
   ["Documentation", "Guides and references", "documentation"],
-  ["Social Media", "Find Axiom online", "social-media"],
   ["Community Guidelines", "Community standards", "community-guidelines"],
-  ["Status", "Service health", "status"],
   ["About", "About Axiom", "about"],
+  ["Promo Program", "Promote Axiom and earn rewards", "programs"],
+  ["Partner Program", "Programs for creators and servers", "programs"],
+  ["Terms of Service", "Platform terms", "terms"],
+  ["Support", "Get help", "support"],
+  ["Social Media", "Find Axiom online", "social-media"],
+  ["Status", "Service health", "status"],
+  ["Learning Program", "Learn Minecraft, modding, and development", "programs"],
 ];
 function Dropdown({ label, items, go, wide = false }) {
   const [open, setOpen] = useState(false);
@@ -81,7 +72,6 @@ function Nav({ go, openSearch }) {
             Download
           </button>
           <Dropdown label="Explore" items={exploreLinks} go={go} />
-          <Dropdown label="Programs" items={programLinks} go={go} wide />
           <Dropdown label="More Info" items={infoLinks} go={go} wide />
         </div>
         <div className="actions">
