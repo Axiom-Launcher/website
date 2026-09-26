@@ -47,9 +47,11 @@ Copy `.env.example` to `.env.local` for local development. Real `.env` files are
 
 ```text
 src/
+├── components/   # Shared UI primitives
 ├── config/       # Validated public runtime configuration
+├── data/         # Replaceable catalog, server, and program fixtures
 ├── services/     # Future API integration boundary
-├── App.jsx       # Page and reusable interface components
+├── App.jsx       # Page composition and application shell
 ├── App.css       # Responsive component styles
 ├── index.css     # Global design tokens and resets
 └── main.jsx      # React application entry point
