@@ -74,16 +74,16 @@ function Nav({ go, openSearch }) {
           <Dropdown label="Explore" items={exploreLinks} go={go} />
           <Dropdown label="More Info" items={infoLinks} go={go} wide />
         </div>
+        <button
+          className="search navSearch"
+          onClick={openSearch}
+          aria-label="Search Axiom"
+        >
+          <Icon name="search" />
+          <span>Search mods, servers, packs…</span>
+          <kbd>⌘ K</kbd>
+        </button>
         <div className="actions">
-          <button
-            className="search"
-            onClick={openSearch}
-            aria-label="Search Axiom"
-          >
-            <Icon name="search" />
-            <span>Search mods, servers, packs…</span>
-            <kbd>⌘ K</kbd>
-          </button>
           <button className="plain loginBtn" onClick={() => go("login")}>
             Login
           </button>
